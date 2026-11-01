@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fuse — coordinated coin launches</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>.coin-icon.has-image{color:#0000;background-position:50%;background-size:cover}.image-upload{color:#a7a7ad;cursor:pointer;border:1px dashed #414146;border-radius:10px;grid-column:2/5;align-items:center;gap:10px;padding:9px 11px;display:flex}.image-upload input{display:none}.image-upload span{color:#d7ff43;font:600 12px Inter,sans-serif}.image-upload small{color:#77777d;font:10px DM Mono,monospace}@media (max-width:900px){.image-upload{grid-column:2}.image-upload small{margin-left:auto}}</style>
+    <script type="module" crossorigin src="/assets/index-B3tO3Dlr.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BzR6yuCX.css">
+  </head>
+  <body>
+    <div class="chain-bar"><span>FUSE ON SOLANA</span><span class="chain-address">CA: CONNECT WALLET TO VIEW</span><span class="service"><i></i> NETWORK READY</span></div>
+    <div class="app-shell">
+      <aside class="rail">
+        <a class="logo" href="#top"><b>↗</b> fuse</a>
+        <nav><a class="active" href="#top"><span>⌂</span> Home</a><a href="#launch"><span>✦</span> Launch coin</a><a href="#activity"><span>◉</span> Activity</a><a href="#profile"><span>◌</span> Creator profile</a><a href="https://fomo.family/profile/Ezeugosol?r=Ezeugosol" target="_blank" rel="noreferrer"><span>↗</span> Fomo family</a></nav>
+        <div class="rail-bottom"><div class="live"><i></i> All services are live</div><a class="creator" href="https://fomo.family/profile/Ezeugosol?r=Ezeugosol" target="_blank" rel="noreferrer"><span>◉</span><small>CREATED BY</small><b>ezeugosol ↗</b></a></div>
+      </aside>
+      <main id="top">
+        <header class="topnav"><div class="search">⌕ <span>Search launches, coins, or creators</span><kbd>⌘ K</kbd></div><div class="top-actions"><a href="https://fomo.family/profile/Ezeugosol?r=Ezeugosol" target="_blank" rel="noreferrer">@ezeugosol</a><button class="circle">⌁</button><button class="wallet" id="walletButton">Connect Solana</button></div></header>
+        <section class="hero"><div class="brand-tag"><b>↗</b> fuse / independent launch protocol</div><h1>Make every<br />launch <em>count.</em></h1><p>Shape your next pump.fun launch in one focused workflow. Connect the story, add your social links, and sign the transaction from your own wallet.</p><div class="hero-actions"><a class="primary" href="#launch">Launch a coin <span>→</span></a><a class="secondary" href="https://fomo.family/profile/Ezeugosol?r=Ezeugosol" target="_blank" rel="noreferrer">Meet the creator ↗</a></div></section>
+        <section class="status-row"><span><i></i> FUSE NETWORK / LIVE</span><span>Self-custodial transactions</span><span>Mainnet • Solana</span></section>
+        <section class="insights" id="activity"><article><div class="panel-label">COORDINATED LAUNCHES</div><h2>Start with<br />the signal.</h2><p>Build coin metadata and social profiles before you open your wallet.</p><div class="stats"><span><b>01</b> creator</span><span><b>∞</b> ideas</span></div></article><article class="flow"><div class="panel-label">FUSE FLOW</div><h2>Make it visible.</h2><div class="flow-line"><b>01</b><span>Token profile</span><i>→</i><b>02</b><span>Social links</span><i>→</i><b>03</b><span>Wallet signs</span></div></article></section>
+        <section class="launch-space" id="launch"><div class="launch-heading"><div><div class="panel-label">LAUNCH STUDIO</div><h2>Build your coin <sup id="tokenCount">01</sup></h2><p>Social URLs should also exist in the metadata JSON at your URI.</p></div></div><div class="token-list" id="tokenList">
+          <article class="token-card"><div class="coin-icon lime" id="coinPreview">B</div><div class="core-fields"><label>Name<input data-field="name" value="BarkCoin" /></label><label>Ticker<input data-field="symbol" value="BARK" maxlength="8" /></label></div><label class="field description">Description<input data-field="description" value="The official currency of good boys." /></label><label class="field metadata">Metadata URI<input data-field="uri" placeholder="ipfs://... or https://..." /></label><label class="image-upload">Coin image<input id="coinImage" type="file" accept="image/png,image/jpeg,image/webp,image/gif" /><span>↑ Upload image</span><small id="imageStatus">PNG, JPG, WebP or GIF · max 5 MB</small></label><div class="social-links"><label>Website<input data-field="website" type="url" placeholder="https://project.xyz" /></label><label>X / Twitter<input data-field="twitter" type="url" placeholder="https://x.com/handle" /></label><label>Telegram<input data-field="telegram" type="url" placeholder="https://t.me/group" /></label></div></article>
+        </div><div class="launch-footer"><span><small>LAUNCH ESTIMATE</small><b><span id="totalCount">1</span> coin · 0.02 SOL + network fees</b></span><button class="review" id="reviewButton">Review & sign <span>→</span></button></div></section>
+        <footer id="profile"><span>fuse / Solana</span><span>accepting SOL · <button id="copySol">AmaKPQ4yFWXf9teHG2GJhPMqXCj75Q6ubkm8U1fwwgLH</button></span><a href="https://fomo.family/profile/Ezeugosol?r=Ezeugosol" target="_blank" rel="noreferrer">created by ezeugosol ↗</a></footer>
+      </main>
+    </div>
+    <dialog id="reviewDialog"><button class="close" id="closeDialog">×</button><div class="panel-label">READY TO SIGN</div><h2>Your coin is lined up.</h2><p id="reviewText">Connect a wallet to continue to the final confirmation.</p><div class="dialog-summary"><span>Launch estimate</span><strong id="dialogCost">0.02 SOL</strong></div><p class="signing-note">Fuse opens one wallet approval. Review the transaction before you approve it.</p><button class="wallet dialog-wallet" id="dialogWallet">Connect wallet <span>→</span></button></dialog>
+    <div class="toast" id="toast"></div>
+  </body>
+</html>
